@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import UpdateTodo from "../UpdateTodo";
-import TodoLists from "../TodoLists";
+import TodoList from "../TodoList";
 
 export function DisplayTodo() {
   const [id, setId] = useState("");
@@ -52,10 +52,10 @@ export function DisplayTodo() {
         <button className="todo-btn">➕ Add new todo</button>
       </Link>
       <section className="todo-data">
-        <h1></h1>
+        {/* <h1></h1> */}
         <ul className="todo-list-block">
           {infoTodo.map((todoInfo, index) => (
-            <TodoLists
+            <TodoList
               key={index}
               todoInfos={todoInfo}
               editHandler={editHandler}

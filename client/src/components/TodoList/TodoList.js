@@ -1,19 +1,21 @@
 import React from "react";
 
-const TodoList = ({ todoInfos, deleteHandler }) => {
+const TodoList = ({ todoInfos, editHandler, deleteHandler }) => {
   const { _id, title, description } = todoInfos;
+
   return (
     <li key={_id}>
       <div className="title-description">
-        <h3>{title}</h3>
+        <h2>{title}</h2>
+        {/* <h1></h1> */}
         <p>{description}</p>
       </div>
-
-      <div className="button-container">
-        <button name={_id} className="button">
+      {/* <h1></h1> */}
+      <div className="todo-btn-container">
+        <button className="todo-btn" name={_id} onClick={editHandler}>
           🖊️
         </button>
-        <button name={_id} className="button" onClick={deleteHandler}>
+        <button className="todo-btn" name={_id} onClick={deleteHandler}>
           🗑️
         </button>
       </div>
