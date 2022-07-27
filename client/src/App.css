@@ -48,9 +48,10 @@ todo-btn {
   border: none;
   border-radius: 2rem;
   height: 5rem;
-  width: 25rem;
+  width: 24rem;
   color: white;
   background-color: #8661d1;
+  font-size: 16px;
 }
 
 button {
@@ -181,8 +182,9 @@ button:active {
   font-weight: 700;
   display: flex;
   justify-content: flex-end;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   cursor: pointer;
+  font-size: 24px;
 }
 .update-container .update-todo-data .todo-data {
   grid-area: form;

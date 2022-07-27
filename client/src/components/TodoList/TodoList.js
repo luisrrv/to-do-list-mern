@@ -1,4 +1,6 @@
 import React from "react";
+import { BiEdit } from 'react-icons/bi';
+import { AiFillDelete } from 'react-icons/ai';
 
 const TodoList = ({ todoInfos, editHandler, deleteHandler }) => {
   const { _id, title, description } = todoInfos;
@@ -13,10 +15,10 @@ const TodoList = ({ todoInfos, editHandler, deleteHandler }) => {
       {/* <h1></h1> */}
       <div className="todo-btn-container">
         <button className="todo-btn" name={_id} onClick={editHandler}>
-          🖊️
+          <BiEdit size={20} />
         </button>
         <button className="todo-btn" name={_id} onClick={deleteHandler}>
-          🗑️
+          <AiFillDelete size={20} />
         </button>
       </div>
     </li>

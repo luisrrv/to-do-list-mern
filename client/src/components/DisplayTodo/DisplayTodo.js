@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import UpdateTodo from "../UpdateTodo";
 import TodoList from "../TodoList";
+import { RiAddFill } from 'react-icons/ri'
 
 export function DisplayTodo() {
   const [id, setId] = useState("");
@@ -49,7 +50,7 @@ export function DisplayTodo() {
   return (
     <section className="container">
       <Link to="/add-list" className="button-new">
-        <button className="todo-btn">➕ Add new todo</button>
+        <button className="todo-btn"><RiAddFill size={28} /> Add new todo</button>
       </Link>
       <section className="todo-data">
         {/* <h1></h1> */}

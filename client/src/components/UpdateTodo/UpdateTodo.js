@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { BiCheckCircle } from 'react-icons/bi'
 
 function UpdateTodo({ _id, closeHandler, updateHandler }) {
   const [todoInfo, setTodoInfo] = useState({ title: "", description: "" });
@@ -49,7 +50,7 @@ function UpdateTodo({ _id, closeHandler, updateHandler }) {
         onChange={handleChange}
       />
       <button type="submit" className="todo-btn">
-        ➕ Add
+      <BiCheckCircle size={28} />
       </button>
     </form>
   );

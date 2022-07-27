@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { RiAddFill } from 'react-icons/ri'
+import { BiArrowBack } from 'react-icons/bi'
 
 const CreateTodo = () => {
   const [todoInfo, setTodoInfo] = useState({ title: "", description: "" });
@@ -28,7 +30,7 @@ const CreateTodo = () => {
     <section className="container">
       <Link to="/">
         <button type="button" className="todo-btn todo-btn-back">
-          🔙 back
+          <BiArrowBack size={20} /> Back
         </button>
       </Link>
 
@@ -55,7 +57,7 @@ const CreateTodo = () => {
             className="input"
           />
           <button type="submit" className="todo-btn">
-            ➕ create todo
+          <RiAddFill size={28} /> Add
           </button>
         </form>
       </section>
