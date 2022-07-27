@@ -33,18 +33,11 @@ todo-btn {
   padding-top: 4rem;
 }
 .container {
-  display: grid;
-  grid-template-columns: 3fr 1fr 1fr;
-  grid-template-rows: 14rem 1.6fr;
-  grid-gap: 0 px 0 px;
-  gap: 0 px 0 px;
-  grid-template-areas:
-    "todo-btn-back . todo-btn-new"
-    "todo-data todo-data todo-data";
-  align-content: stretch;
-  justify-content: space-evenly;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-items: end;
+  gap: 2rem;
 }
 
 .todo-btn {
@@ -110,16 +103,16 @@ button:active {
 .todo-data h1 {
   margin-bottom: 3rem;
 }
-.todo-list-block {
+/* .todo-list-block {
   display: flex;
   flex-direction: column;
-}
+} */
 .todo-list-block li {
   background: rgba(134, 97, 209, 0.25);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(2.5px);
   -webkit-backdrop-filter: blur(2.5px);
-  border-radius: 55px;
+  border-radius: 28px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   flex-direction: column;
@@ -145,9 +138,9 @@ button:active {
 }
 .todo-list-block {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
-  width: 110rem;
+  /* width: 110rem; */
   margin: 0 auto;
 }
 
@@ -193,4 +186,15 @@ button:active {
 }
 .update-container .update-todo-data .todo-data {
   grid-area: form;
+}
+
+@media (min-width: 586px) and (max-width: 900px) {
+  .todo-list-block {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 585px) {
+  .todo-list-block {
+    grid-template-columns: 1fr;
+  }
 }
