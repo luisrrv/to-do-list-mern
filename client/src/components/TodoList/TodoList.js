@@ -8,9 +8,9 @@ const TodoList = ({ todoInfos, editHandler, deleteHandler }) => {
   return (
     <li key={_id}>
       <div className="title-description">
-        <h2>{title}</h2>
+        <h2 className="title">{title}</h2>
         {/* <h1></h1> */}
-        <p>{description}</p>
+        <p className="description">{description}</p>
       </div>
       {/* <h1></h1> */}
       <div className="todo-btn-container">
