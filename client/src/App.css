@@ -13,8 +13,9 @@ html {
   font-size: 69%;
 }
 
-todo-btn {
+.todo-btn {
   cursor: pointer;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.163);
 }
 .todo-Container {
   background-image: linear-gradient(
@@ -56,13 +57,17 @@ todo-btn {
 
 button {
   cursor: pointer;
+  transition: 200ms;
+}
+button:hover {
+  opacity: 0.9;
 }
 
-button:active {
+/* button:active {
   background-color: #8661d1;
   box-shadow: 0 7px #967cc9;
   transform: translateY(4px);
-}
+} */
 
 .input {
   display: flex;
@@ -78,6 +83,9 @@ button:active {
   display: flex;
   margin: 0;
 }
+.edit-btn {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.068);
+}
 .todo-btn-back,
 .todo-btn-new {
   width: 10rem;
@@ -88,11 +96,13 @@ button:active {
 }
 .todo-btn-back {
   grid-area: todo-btn-back;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 .todo-btn-new {
   grid-area: todo-btn-new;
   display: flex;
   justify-self: end;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
 }
 .todo-data {
   grid-area: todo-data;
@@ -144,6 +154,10 @@ button:active {
 }
 .todo-list-block li .todo-btn-container button:first-of-type {
   margin-right: 2rem;
+}
+.button-new {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 24px;
 }
 .todo-list-block {
   display: grid;

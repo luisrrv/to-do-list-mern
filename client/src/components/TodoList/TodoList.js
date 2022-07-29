@@ -14,10 +14,10 @@ const TodoList = ({ todoInfos, editHandler, deleteHandler }) => {
       </div>
       {/* <h1></h1> */}
       <div className="todo-btn-container">
-        <button className="todo-btn" name={_id} onClick={editHandler}>
+        <button className="todo-btn edit-btn" name={_id} onClick={editHandler}>
           <BiEdit size={20} />
         </button>
-        <button className="todo-btn" name={_id} onClick={deleteHandler}>
+        <button className="todo-btn edit-btn" name={_id} onClick={deleteHandler}>
           <AiFillDelete size={20} />
         </button>
       </div>

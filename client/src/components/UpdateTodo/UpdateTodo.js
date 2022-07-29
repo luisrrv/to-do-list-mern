@@ -32,7 +32,7 @@ function UpdateTodo({ _id, closeHandler, updateHandler }) {
       }}
     >
       <label htmlFor="title" className="label">
-        Todo Title
+        Title
       </label>
       <input
         type="text"
@@ -41,7 +41,7 @@ function UpdateTodo({ _id, closeHandler, updateHandler }) {
         onChange={handleChange}
       />
       <label htmlFor="description" className="label">
-        Todo Description
+        Description
       </label>
       <input
         type="textarea"
