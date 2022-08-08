@@ -1,4 +1,4 @@
-# To-do List
+# 📝 To-do List 
 ## A To-do list app made with MERN Stack 
 ### Use:
 ### From server folder run the following:
